@@ -1,0 +1,91 @@
+nav {
+    width: 57%;
+    text-align: center;
+    background-color: rgba(185, 191, 201, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 21.5%;
+    z-index: 5;
+    transition: all 0.4s;
+
+    .logo {
+        position: relative;
+        img {
+            left: 15px;
+            height: 35px;
+            position: absolute;
+            bottom: 15px;
+        }
+    }
+
+    ul {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 0 0 0;
+        line-height: 70px;
+        padding-right: 88px;
+        max-height: 65px;
+
+        li {
+            list-style: none;
+            line-height: 60px;
+            padding: 4px 14px 0px 14px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    color: #1D9D26;
+                }
+            }
+            
+            .active-a{
+                color: #5FB06A;
+            }
+        }
+
+        .active {
+            border-bottom: 4px solid #5FB06A;
+        }
+    }
+
+    .nav-number {
+        position: absolute;
+        right: 75px;
+        color: #5FB06A;
+        font-weight: 700;
+        top: 6px;
+
+        span {
+            font-size: 15px;
+        }
+    }
+
+    .lenguage {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+
+        &:hover {
+            color: #1D9D26;
+            cursor: pointer;
+        }
+
+        span {
+            color: #5FB06A;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+.nav-change {
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
+};

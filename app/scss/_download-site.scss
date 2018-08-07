@@ -1,0 +1,84 @@
+#download {
+    .documents {
+        h2 {
+            text-align: center;
+            margin-top: 90px;
+            margin-bottom: 70px;
+            font-weight: 400;
+        }
+
+        .documents-container {
+            display: flex;
+            justify-content: center;
+            width: 57%;
+            margin-right: auto;
+            margin-left: auto;
+            .left-document,
+            .right-document {
+                text-align: left;
+                font-size: 14px;
+                flex: 1;
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                .main-list {
+                    padding-left: 10px;
+                    font-size: 16px;
+                    li {
+                        font-size: 16px;
+                        padding-bottom: 16px;
+                        ol {
+                            li:first-of-type {
+                                padding-top: 16px;
+                            }
+                            li:last-of-type {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .right-document {
+                margin-left: 50px;
+
+                .main-list {
+                    padding-left: 22px;
+                }
+            }
+        }
+    }
+
+    .download-files {
+        text-align: center;
+        background-color: #F5F5F5;
+        padding-bottom: 65px;
+        h2 {
+            padding-top: 60px;
+            padding-bottom: 50px;
+            font-weight: 400;
+            font-size: 25px;
+        }
+        .download-files-container {
+            display: flex;
+            width: 55%;
+            margin: auto;
+            justify-content: space-evenly;
+            .files {
+                flex: 1;
+                font-weight: 500;
+                p {
+                    min-height: 38px;
+                }
+
+                button {
+                    @include transparentButton;
+                    position: static;
+                }
+
+            }
+        }
+    }
+}

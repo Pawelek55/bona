@@ -1,0 +1,87 @@
+#contact {
+    .contact-container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 85px;
+        width: 56%;
+        margin: auto;
+        .left-contact,
+        .right-contact {
+            width: 50%;
+            h2 {
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 15px;
+            }
+            p {
+                margin: 5px 0;
+                font-size: 15px;
+            }
+        }
+        .right-contact {
+            margin-left: 70px;
+            form {
+                display: flex;
+                flex-direction: column;
+                input,
+                textarea {
+                    border: 1px solid #e8e8e8;
+                    border-radius: 25px;
+                    padding: 5px 5px 5px 10px;
+                    width: 350px;
+                    height: 32px;
+                    font-family: Montserrat, sans-serif;
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+                textarea {
+                    height: 80px;
+                }
+                .number {
+                    width: 50px;
+                }
+
+            }
+            button {
+                @include button;
+                width: 105px;
+                margin-top: 0;
+                margin-bottom: 30px;
+                margin-left: 250px;
+            }
+        }
+    }
+    .map-container {
+        display: flex;
+        width: 62%;
+        justify-content: space-around;
+        margin: auto;
+        padding-bottom: 70px;
+        #doz {
+
+            div {
+                background-image: url(../img/doz.PNG);
+                width: 560px;
+                height: 415px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+        #siem {
+
+            div {
+                background-image: url(../img/siem.PNG);
+                width: 560px;
+                height: 415px;
+            }
+            p {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import 'nav';
+@import 'main-header';
+@import 'below-main-header';
+@import 'footer';
+@import 'style-about';
+@import 'style-offer';
+@import 'style-work';
+@import 'style-gallery';
+@import 'style-download';
+@import 'style-contact';
