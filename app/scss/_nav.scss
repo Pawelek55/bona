@@ -43,9 +43,14 @@ nav {
                 &:hover {
                     color: #1D9D26;
                 }
+
             }
-            
-            .active-a{
+
+            &:hover {
+                background-color: rgba(15, 168, 27, .1)
+            }
+
+            .active-a {
                 color: #5FB06A;
             }
         }
@@ -88,4 +93,6 @@ nav {
 .nav-change {
     background-color: #fff;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
-};
+}
+
+;

@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         changeBox();
     });
 
+
     previousSlide.addEventListener('click', function () {
         slideIndex = slideIndex - 1;
         slider.style.marginLeft = slideIndex * -100 + '%';
@@ -93,5 +94,44 @@ document.addEventListener('DOMContentLoaded', function () {
             boxArray[0].classList.remove('first');
         };
     };
+    
+        console.log(slideIndex)
 
+    
+    
+//    setInterval(slide, 3000);
+//
+//
+//
+//function slide(e) {
+//    if (slideIndex > 4) {
+//        slideIndex = 0;
+//    }
+//
+//
+////    if (e.target == dotsContainer) return;
+//
+//    //    let marginLeft = opinionSlideIndex * opinionSlideWidth + '%';
+//    marginLeft = slideIndex * -100 + '%';
+//    //    console.log(marginLeft)
+//
+//    slideIndex = slideIndex 
+//    let newSlideIndex = slideIndex + 1;
+//
+//    $(slider).animate({
+//        'margin-left': marginLeft
+//    }, 800, function () {
+//        slideIndex = newSlideIndex;
+//    })
+//
+////    console.log(opinionSlideIndex)
+////    let dotsArr = Array.from(dots)
+//
+//}
+    
+    
+    
+    
+    
 });
+

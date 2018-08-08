@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bona-med</title>
-    <link rel = "icon" href = "../app/img/5.PNG">
+    <link rel="icon" href="../app/img/5.PNG">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800i,900&amp;subset=latin-ext" rel="stylesheet">
 
 
@@ -13,9 +13,10 @@
     <!--    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/fontawesome-free-5.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
+    <script src="../app/js/jquery-3.3.1.min.js" defer></script>
     <script src="js/nav.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/main-slider.js" defer></script>
 </head>
 
 <body>
@@ -34,52 +35,51 @@
     </nav>
 
     <header>
-        <div class="slider-background">
+        <div class="slider-background elements-list" id="slider1">
+            <!--            <div class="element slider">-->
+            <div class="element">
+
+                <img src="../app/img/Seniors-Chatting-Lets-Talk-Ageing-1920px-1.jpg" alt="">
+            </div>
+            <div class="element slider-slide-active">
+
+                <img src="../app/img/1920px--Element_hunter_Yuri_Oganessian_on_creating_new_chemical_elements-VPRO-The_Mind_of_the_Universe.ogv.jpg" alt="">
+            </div>
+            <div class="element ">
+
+                <img src="../app/img/grandparents-2198053_1920.jpg" alt="">
+            </div>
+            <div class="element">
+
+                <img src="../app/img/1920px--WIKITONGUES-_David_speaking_Doric_Scots_and_English.webm.jpg" alt="">
+            </div>
+            <!--            </div>-->
             <div class="slider-arrows">
                 <button class="prev-slide"><i class="fas fa-angle-left"></i></button>
                 <button class="next-slide"><i class="fas fa-angle-right"></i></button>
             </div>
-            <div class="slider">
-                <div class="single-slide">
-
-                    <img src="../app/img/Seniors-Chatting-Lets-Talk-Ageing-1920px-1.jpg" alt="">
+            <div class="slider-container">
+                <div class="slider-box first">
+                    <h1>DZIAŁAMY </h1>
+                    <p>Oferujemy rehabilitację, terapię zajęciową oraz wyżywienie dopasowane do indywidualnej diety.</p>
+                    <button><a href="podstrony/offer.html#akt">Przejdź ></a></button>
                 </div>
-                <div class="single-slide">
-
-                    <img src="../app/img/1920px--Element_hunter_Yuri_Oganessian_on_creating_new_chemical_elements-VPRO-The_Mind_of_the_Universe.ogv.jpg" alt="">
+                <div class="slider-box border">
+                    <h1>ZAPEWNIAMY</h1>
+                    <p>W naszym ośrodku oferujemy pobyty komercyjne i refundowane, czasowe, długoterminowe oraz dzienne.
+                    </p>
+                    <button><a href="podstrony/offer.html#provide">Przejdź ></a></button>
                 </div>
-                <div class="single-slide">
-
-                    <img src="../app/img/grandparents-2198053_1920.jpg" alt="">
+                <div class="slider-box border">
+                    <h1>POMAGAMY</h1>
+                    <p>Nasz doświadczony personel zapewnia kompleksową opiekę medyczną, rehabilitacyjną oraz psychologiczną.</p>
+                    <button><a href="podstrony/offer.html#help">Przejdź ></a></button>
                 </div>
-                <div class="single-slide">
-
-                    <img src="../app/img/1920px--WIKITONGUES-_David_speaking_Doric_Scots_and_English.webm.jpg" alt="">
+                <div class="slider-box">
+                    <h1>JESTEŚMY</h1>
+                    <p>Działamy od 10 lat, w naszych 2 ośrodkach w Krakowie gościliśmy już ponad 1000 zadowolonych pacjentów.</p>
+                    <button><a href="podstrony/about-us.html">Przejdź ></a></button>
                 </div>
-            </div>
-        </div>
-
-        <div class="slider-container">
-            <div class="slider-box first">
-                <h1>DZIAŁAMY </h1>
-                <p>Oferujemy rehabilitację, terapię zajęciową oraz wyżywienie dopasowane do indywidualnej diety.</p>
-                <button>Przejdź ></button>
-            </div>
-            <div class="slider-box border">
-                <h1>ZAPEWNIAMY</h1>
-                <p>W naszym ośrodku oferujemy pobyty komercyjne i refundowane, czasowe, długoterminowe oraz dzienne.
-                </p>
-                <button>Przejdź ></button>
-            </div>
-            <div class="slider-box border">
-                <h1>POMAGAMY</h1>
-                <p>Nasz doświadczony personel zapewnia kompleksową opiekę medyczną, rehabilitacyjną oraz psychologiczną.</p>
-                <button>Przejdź ></button>
-            </div>
-            <div class="slider-box">
-                <h1>JESTEŚMY</h1>
-                <p>Działamy od 10 lat, w naszych 2 ośrodkach w Krakowie gościliśmy już ponad 1000 zadowolonych pacjentów.</p>
-                <button>Przejdź ></button>
             </div>
         </div>
     </header>
