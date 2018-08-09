@@ -7,7 +7,7 @@ body {
   box-sizing: border-box; }
 
 nav {
-  width: 57%;
+  width: 1100px;
   text-align: center;
   background-color: rgba(185, 191, 201, 0.3);
   margin-left: auto;
@@ -16,9 +16,10 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 21.5%;
   z-index: 5;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  left: 50%;
+  transform: translateX(-50%); }
   nav .logo {
     position: relative; }
     nav .logo img {
@@ -111,7 +112,7 @@ header .slider-background {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,15 +120,44 @@ header .slider-background {
     opacity: 0;
     z-index: 0;
     transition: all 2s; }
+    header .slider-background .slider-slide .photo1 {
+      background-image: url(../img/Seniors-Chatting-Lets-Talk-Ageing-1920px-1.jpg);
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    header .slider-background .slider-slide .photo2 {
+      background-image: url(../img/1920px--Element_hunter_Yuri_Oganessian_on_creating_new_chemical_elements-VPRO-The_Mind_of_the_Universe.ogv.jpg);
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    header .slider-background .slider-slide .photo3 {
+      background-image: url(../img/grandparents-2198053_1920.jpg);
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    header .slider-background .slider-slide .photo4 {
+      background-image: url(../img/1920px--WIKITONGUES-_David_speaking_Doric_Scots_and_English.webm.jpg);
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
   header .slider-background .slider-slide-active {
     z-index: 1;
     opacity: 1; }
 
 header .slider-container {
-  width: 58%;
+  width: 1100px;
   display: flex;
   position: absolute;
-  left: 21%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   text-align: center;
   box-sizing: content-box;
@@ -234,11 +264,11 @@ header .slider-container {
 
 #below-header .below-header-up {
   display: flex;
-  width: 62%;
+  width: 1100px;
   margin-left: auto;
   margin-right: auto;
   font-family: Montserrat, sans-serif;
-  padding: 35px 28px; }
+  padding: 35px 0; }
   #below-header .below-header-up .right-side {
     padding-left: 43px;
     /* padding-top: 50px; */
@@ -246,7 +276,7 @@ header .slider-container {
     flex-direction: column;
     justify-content: center; }
     #below-header .below-header-up .right-side h2 {
-      width: 77%;
+      width: 81%;
       font-weight: 500;
       font-size: 30px; }
     #below-header .below-header-up .right-side p {
@@ -287,7 +317,8 @@ header .slider-container {
       display: flex;
       justify-content: center;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      z-index: 1; }
       .below-header-down .container-box .boxes img {
         height: 90px;
         padding-left: 25px; }
@@ -305,13 +336,13 @@ header .slider-container {
     right: 0; }
 
 footer {
-  background-color: #36B918;
+  background-image: linear-gradient(to right, #36b918, #2ea711, #25950b, #1d8404, #157300);
   color: #fff;
   font-size: 14px; }
   footer .footer-up {
     display: flex;
     justify-content: space-evenly;
-    width: 65%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto; }
     footer .footer-up .contact {
@@ -401,6 +432,9 @@ section .about-firm {
   font-family: Montserrat, sans-serif;
   padding-left: 60px;
   padding-top: 70px; }
+  section .about-firm img {
+    width: 311px;
+    height: 302px; }
   section .about-firm .right-side {
     padding-left: 73px;
     display: flex;
@@ -411,26 +445,10 @@ section .about-firm {
       font-size: 30px; }
     section .about-firm .right-side p {
       margin-top: 0;
-      font-size: 12px;
-      line-height: 25px;
-      width: 83%; }
-    section .about-firm .right-side button {
-      width: 200px;
-      height: 40px;
-      margin-top: 20px;
-      background-color: #169629;
-      border-radius: 20px;
-      border: 0;
-      color: #fff;
-      font-weight: 600;
       font-size: 15px;
-      letter-spacing: 1px;
-      font-family: Montserrat, sans-serif;
-      transition: all 0.4s;
-      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8); }
-      section .about-firm .right-side button:hover {
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
-        cursor: pointer; }
+      line-height: 25px;
+      width: 83%;
+      padding-bottom: 20px; }
 
 #centers {
   text-align: center;
@@ -485,16 +503,18 @@ section .about-firm {
     padding-top: 60px; }
   #opinion .opinion-container {
     float: left; }
+    #opinion .opinion-container .photo-of-book img {
+      width: 480px; }
   #opinion .opinion-slider-container {
-    width: 65%;
+    width: 59%;
     float: left;
     overflow: hidden;
-    margin-left: 70px; }
+    margin-left: 10px; }
     #opinion .opinion-slider-container .opinion-slider {
       position: relative;
       padding-top: 50px;
       overflow: hidden;
-      height: 300px;
+      height: 330px;
       float: left;
       width: 75%; }
       #opinion .opinion-slider-container .opinion-slider .opinion-slides {
@@ -507,7 +527,7 @@ section .about-firm {
         #opinion .opinion-slider-container .opinion-slider .opinion-slides p {
           text-align: left;
           padding-top: 25px;
-          padding-left: 100px; }
+          padding-left: 70px; }
         #opinion .opinion-slider-container .opinion-slider .opinion-slides .name {
           text-align: right; }
   #opinion .clear {

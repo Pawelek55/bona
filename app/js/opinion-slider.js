@@ -67,7 +67,7 @@ let opinionNewSlideIndex
 let dotsContainer = document.querySelector('.slider-dots');
 let dots = document.querySelectorAll('.slider-dots-element');
 
-setInterval(slide, 3000);
+setInterval(slide, 5000);
 
 function slide(e) {
     if (opinionSlideIndex > 5) {

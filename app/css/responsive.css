@@ -1,0 +1,186 @@
+@media all and (max-width: 1200px) {
+  nav {
+    width: 950px; }
+  header .slider-container {
+    display: none; }
+  #below-header .below-header-up {
+    width: 950px; }
+  #below-header .below-header-down {
+    height: auto; }
+    #below-header .below-header-down .container-box {
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+      padding-top: 25px; }
+      #below-header .below-header-down .container-box .boxes {
+        margin: 0px 15px 25px 15px;
+        position: relative;
+        width: 90%;
+        height: 100px; }
+        #below-header .below-header-down .container-box .boxes img {
+          position: absolute;
+          left: 5px; }
+    #below-header .below-header-down .tree {
+      display: none; }
+  section .about-firm {
+    width: 100%;
+    padding-bottom: 25px; }
+  #opinion .opinion-container .photo-of-book img {
+    width: 400px; }
+  #opinion .opinion-slider-container {
+    margin-left: 0; }
+  section #akt h2 {
+    margin-top: 50px; }
+  section #akt .akt-container {
+    width: 84%; }
+    section #akt .akt-container img {
+      width: 480px; }
+  section .admission-rules .admission-rules-container {
+    width: 76%; }
+  section .admission-rules .decision {
+    width: 76%; }
+  #provide .provide-up {
+    width: 80%; }
+  #provide .comercial {
+    width: 80%; }
+  #help p {
+    width: 80%; }
+  #questions .telefon-header {
+    padding-top: 60px;
+    padding-bottom: 20px; }
+  #work {
+    width: 80%; }
+  #gallery .gallery-container {
+    width: 80%; }
+    #gallery .gallery-container .left-gallery {
+      margin-top: 35px; }
+      #gallery .gallery-container .left-gallery h3 {
+        margin-top: 0; }
+    #gallery .gallery-container .right-gallery img {
+      width: 450px; }
+  #gallery .photos-container {
+    width: 80%; }
+  #download .documents .documents-container {
+    width: 80%; }
+  #download .download-files .download-files-container {
+    width: 80%; }
+  #contact .contact-container {
+    width: 80%; }
+    #contact .contact-container .right-contact form input,
+    #contact .contact-container .right-contact form textarea {
+      width: 450px; }
+  #contact .map-container {
+    width: 80%; }
+    #contact .map-container #doz div,
+    #contact .map-container #siem div {
+      width: 450px;
+      height: 350px; }
+  footer .footer-down {
+    width: 100%; } }
+
+@media all and (max-width: 992px) {
+  nav {
+    width: 100%; }
+    nav .logo img {
+      height: 25px;
+      top: 5px;
+      bottom: 0; }
+    nav ul {
+      margin-top: 20px; }
+  #below-header .below-header-up {
+    width: 768px; }
+    #below-header .below-header-up img {
+      width: 210px;
+      height: 210px; }
+    #below-header .below-header-up .right-side h2 {
+      font-size: 20px; }
+    #below-header .below-header-up .right-side a {
+      height: 60px; }
+  #about .about-firm {
+    padding-top: 10px; }
+    #about .about-firm img {
+      width: 260px;
+      height: 252px; }
+    #about .about-firm .right-side {
+      padding-left: 30px; }
+      #about .about-firm .right-side h2 {
+        font-size: 25px; }
+      #about .about-firm .right-side p {
+        width: 98%; }
+  #centers .photos {
+    flex-direction: column;
+    align-items: center; }
+    #centers .photos .left {
+      padding-right: 15px; }
+    #centers .photos .right {
+      padding-left: 15px; }
+  #opinion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0; }
+    #opinion .opinion-slider-container {
+      width: 98%; }
+  section #akt .akt-container {
+    width: 98%; }
+    section #akt .akt-container .right-side {
+      padding-left: 10px; }
+      section #akt .akt-container .right-side img {
+        width: 410px; }
+  section .admission-rules .admission-rules-container,
+  section .admission-rules .decision {
+    width: 95%; }
+  #provide .provide-up,
+  #provide .comercial {
+    width: 95%; }
+  #help h2 {
+    padding-top: 60px;
+    margin-bottom: 40px; }
+  #questions form .left-side input,
+  #questions form .left-side textarea,
+  #questions form .right-side input,
+  #questions form .right-side textarea {
+    width: 420px; }
+  #work {
+    width: 95%; }
+  #gallery .gallery-container,
+  #gallery .photos-container {
+    width: 95%; }
+  #download .documents .documents-container {
+    width: 95%; }
+  #download .download-files .download-files-container {
+    width: 95%; }
+  #contact .contact-container {
+    width: 95%; }
+  #contact .map-container {
+    width: 95%; }
+    #contact .map-container #doz div,
+    #contact .map-container #siem div {
+      width: 400px;
+      height: 300px; }
+  footer .footer-up {
+    width: 98%; } }
+
+@media all and (max-width: 768px) {
+  #below-header .below-header-up {
+    width: 768px; }
+  #about .bookmark a {
+    line-height: 58px;
+    width: 150px;
+    margin: 10px 20px 20px 20px; }
+  #about .about-firm {
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 0; }
+    #about .about-firm img {
+      width: 220px;
+      height: 213px; }
+    #about .about-firm .right-side {
+      padding-left: 40px; }
+      #about .about-firm .right-side h2 {
+        font-weight: 500;
+        font-size: 20px; }
+      #about .about-firm .right-side p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        width: 98%; } }

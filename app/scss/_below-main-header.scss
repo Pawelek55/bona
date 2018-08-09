@@ -1,11 +1,11 @@
 #below-header {
     .below-header-up {
         display: flex;
-        width: 62%;
+        width: 1100px;
         margin-left: auto;
         margin-right: auto;
         font-family: Montserrat, sans-serif;
-        padding: 35px 28px;
+        padding: 35px 0;
 
         .right-side {
             padding-left: 43px;
@@ -15,7 +15,7 @@
             justify-content: center;
 
             h2 {
-                width: 77%;
+                width: 81%;
                 font-weight: 500;
                 font-size: 30px;
             }
@@ -49,6 +49,7 @@
             justify-content: center;
             display: flex;
             align-items: center;
+            z-index: 1;
 
             img {
                 height: 90px;

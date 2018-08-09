@@ -47,6 +47,11 @@ section {
         font-family: Montserrat, sans-serif;
         padding-left: 60px;
         padding-top: 70px;
+        
+        img{
+            width: 311px;
+            height: 302px
+        }
 
         .right-side {
             padding-left: 73px;
@@ -60,31 +65,11 @@ section {
             }
             p {
                 margin-top: 0;
-                font-size: 12px;
+                font-size: 15px;
                 line-height: 25px;
                 width: 83%;
+                padding-bottom: 20px;
             }
-            button {
-                width: 200px;
-                height: 40px;
-                margin-top: 20px;
-                background-color: #169629;
-                border-radius: 20px;
-                border: 0;
-                color: #fff;
-                font-weight: 600;
-                font-size: 15px;
-                letter-spacing: 1px;
-                font-family: Montserrat, sans-serif;
-                transition: all 0.4s;
-                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, .8);
-
-                &:hover {
-                    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
-                    cursor: pointer;
-                }
-            }
-
         }
     }
 }
@@ -136,18 +121,23 @@ section {
         padding-top: 60px;
     }
     .opinion-container {
-        float: left
+        float: left;
+        .photo-of-book{
+            img{
+                width: 480px;
+            }
+        }
     }
     .opinion-slider-container {
-        width: 65%;
+        width: 59%;
         float: left;
         overflow: hidden;
-        margin-left: 70px;
+        margin-left: 10px;
         .opinion-slider {
             position: relative;
             padding-top: 50px;
             overflow: hidden;
-            height: 300px;
+            height: 330px;
             float: left;
             width: 75%;
             .opinion-slides {
@@ -161,7 +151,7 @@ section {
                 p {
                     text-align: left;
                     padding-top: 25px;
-                    padding-left: 100px;
+                    padding-left: 70px;
                 }
                 .name {
                     text-align: right;

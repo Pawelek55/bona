@@ -1,0 +1,382 @@
+@media all and (max-width: 1200px) {
+    //    Nav
+    nav {
+        width: 950px;
+    } //    index
+    header {
+        .slider-container {
+            display: none;
+        }
+    }
+
+    #below-header {
+        .below-header-up {
+            width: 950px;
+        }
+        .below-header-down {
+            height: auto;
+
+            .container-box {
+                flex-direction: column;
+                width: 90%;
+                align-items: center;
+                padding-top: 25px;
+
+                .boxes {
+                    margin: 0px 15px 25px 15px;
+                    position: relative;
+                    width: 90%;
+                    height: 100px;
+
+                    img {
+                        position: absolute;
+                        left: 5px;
+                    }
+                }
+            }
+            .tree {
+                display: none;
+            }
+        }
+    } //    About-us
+    section {
+        .about-firm {
+            width: 100%;
+            padding-bottom: 25px;
+        }
+    }
+
+
+    #opinion {
+        .opinion-container {
+            .photo-of-book {
+                img {
+                    width: 400px;
+                }
+            }
+        }
+        .opinion-slider-container {
+            margin-left: 0;
+        }
+    } //    Offer
+    section {
+        #akt {
+            h2 {
+                margin-top: 50px;
+            }
+            .akt-container {
+                width: 84%;
+                img {
+                    width: 480px;
+                }
+            }
+        }
+
+        .admission-rules {
+            .admission-rules-container {
+                width: 76%;
+            }
+            .decision {
+                width: 76%;
+            }
+        }
+    }
+
+    #provide {
+        .provide-up {
+            width: 80%;
+        }
+        .comercial {
+            width: 80%;
+        }
+    }
+
+    #help {
+        p {
+            width: 80%;
+        }
+    }
+
+    #questions {
+        .telefon-header {
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+    } //    Work
+    #work {
+        width: 80%;
+    } //Gallery
+    #gallery {
+        .gallery-container {
+            width: 80%;
+            .left-gallery {
+                margin-top: 35px;
+                h3 {
+                    margin-top: 0;
+                }
+            }
+            .right-gallery {
+                img {
+                    width: 450px;
+                }
+            }
+        }
+
+        .photos-container {
+            width: 80%;
+        }
+    } //    Download
+    #download {
+        .documents {
+            .documents-container {
+                width: 80%;
+            }
+        }
+        .download-files {
+            .download-files-container {
+                width: 80%;
+            }
+        }
+    }
+
+    #contact {
+        .contact-container {
+            width: 80%;
+
+            .right-contact {
+                form {
+                    input,
+                    textarea {
+                        width: 450px;
+                    }
+                }
+            }
+        }
+        .map-container {
+            width: 80%;
+
+            #doz,
+            #siem {
+                div {
+                    width: 450px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-down {
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media all and (max-width: 992px) {
+    nav {
+        width: 100%;
+        .logo {
+            img {
+                height: 25px;
+                top: 5px;
+                bottom: 0;
+            }
+        }
+        ul {
+            margin-top: 20px;
+        }
+    } //    Index 
+    #below-header {
+        .below-header-up {
+            width: 768px;
+            img {
+                width: 210px;
+                height: 210px;
+            }
+            .right-side {
+                h2 {
+                    font-size: 20px;
+                }
+                a {
+                    height: 60px;
+                }
+            }
+        }
+    } //    About-us
+    #about {
+        .about-firm {
+            padding-top: 10px;
+            img {
+                width: 260px;
+                height: 252px;
+            }
+            .right-side {
+                padding-left: 30px;
+
+                h2 {
+                    font-size: 25px;
+                }
+                p {
+                    width: 98%;
+                }
+            }
+        }
+    }
+    #centers {
+        .photos {
+            flex-direction: column;
+            align-items: center;
+            .left {
+                padding-right: 15px;
+
+            }
+            .right {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    #opinion {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        .opinion-slider-container {
+            width: 98%;
+        }
+    } //    Offer
+    section {
+        #akt {
+            .akt-container {
+                width: 98%;
+                .right-side {
+                    padding-left: 10px;
+                    img {
+                        width: 410px;
+                    }
+                }
+            }
+        }
+        .admission-rules {
+            .admission-rules-container,
+            .decision {
+                width: 95%;
+            }
+        }
+    }
+    #provide {
+        .provide-up,
+        .comercial {
+            width: 95%;
+        }
+    }
+    #help {
+        h2 {
+            padding-top: 60px;
+            margin-bottom: 40px;
+        }
+    }
+    #questions {
+        form {
+            .left-side,
+            .right-side {
+                input,
+                textarea {
+                    width: 420px;
+                }
+            }
+
+        }
+    } //    Work
+    #work {
+        width: 95%;
+    } //    Gallery
+    #gallery {
+        .gallery-container,
+        .photos-container {
+            width: 95%;
+        }
+    } //    Download
+    #download {
+        .documents {
+            .documents-container {
+                width: 95%;
+            }
+        }
+        .download-files {
+            .download-files-container {
+                width: 95%;
+            }
+        }
+    } //    Contact
+    #contact {
+        .contact-container {
+            width: 95%;
+        }
+        .map-container {
+            width: 95%;
+
+            #doz,
+            #siem {
+                div {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-up {
+            width: 98%;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    //    Index 
+    #below-header {
+        .below-header-up {
+            width: 768px; //            background-color: blueviolet;
+        }
+    } //    About-us
+    #about {
+        .bookmark {
+            a {
+                line-height: 58px;
+                width: 150px;
+                margin: 10px 20px 20px 20px;
+            }
+        }
+        .about-firm {
+            align-items: center;
+            padding-left: 30px;
+            padding-top: 0;
+
+            img {
+                width: 220px;
+                height: 213px;
+            }
+
+            .right-side {
+                padding-left: 40px;
+                h2 {
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 300;
+                    width: 98%;
+                }
+            }
+        }
+    }
+}
+
+
+//@media all and (max-width: 480px) {}
