@@ -12,13 +12,19 @@ nav {
   background-color: rgba(185, 191, 201, 0.3);
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 5;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
   nav .logo {
     position: relative; }
@@ -27,9 +33,59 @@ nav {
       height: 35px;
       position: absolute;
       bottom: 15px; }
+  nav .toggle {
+    display: none;
+    width: 100%;
+    /*        
+        .hamburger:focus {
+            transform: rotate(45deg) translateY(5px);
+            border: none;
+        }
+        
+        .hamburger:focus::after {
+            transform: rotate(-90deg) translateX(-4px);
+        }*/ }
+    nav .toggle .hamburger {
+      width: 20px;
+      height: 15px;
+      border: 0;
+      border-top: 2px solid #169629;
+      background: transparent;
+      position: absolute;
+      -webkit-transition: 0.3s -webkit-transform linear;
+      transition: 0.3s -webkit-transform linear;
+      transition: 0.3s transform linear;
+      transition: 0.3s transform linear, 0.3s -webkit-transform linear;
+      margin-left: auto;
+      margin-right: auto;
+      top: 15px;
+      right: 30px; }
+    nav .toggle .hamburger::before,
+    nav .toggle .hamburger::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid #169629;
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px); }
+    nav .toggle .hamburger::after {
+      -webkit-transform: translateY(11px);
+      transform: translateY(11px);
+      -webkit-transition: 0.3s -webkit-transform linear;
+      transition: 0.3s -webkit-transform linear;
+      transition: 0.3s transform linear;
+      transition: 0.3s transform linear, 0.3s -webkit-transform linear; }
+    nav .toggle .hamburger:hover {
+      cursor: pointer; }
   nav ul {
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     margin: 10px 0 0 0;
     line-height: 70px;
@@ -48,6 +104,8 @@ nav {
         background-color: rgba(15, 168, 27, 0.1); }
       nav ul li .active-a {
         color: #5FB06A; }
+    nav ul .lenguage-below {
+      display: none; }
     nav ul .active {
       border-bottom: 4px solid #5FB06A; }
   nav .nav-number {
@@ -72,6 +130,7 @@ nav {
 
 .nav-change {
   background-color: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3); }
 
 header .slider-background {
@@ -113,12 +172,22 @@ header .slider-background {
     top: 0;
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     opacity: 0;
     z-index: 0;
+    -webkit-transition: all 2s;
     transition: all 2s; }
     header .slider-background .slider-slide .photo1 {
       background-image: url(../img/Seniors-Chatting-Lets-Talk-Ageing-1920px-1.jpg);
@@ -154,19 +223,32 @@ header .slider-background {
 
 header .slider-container {
   width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: 0;
   text-align: center;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   z-index: 2; }
   header .slider-container .slider-box {
     padding: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(185, 191, 201, 0.3);
     max-height: 246px;
@@ -191,8 +273,10 @@ header .slider-container {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 14px;
+      -webkit-transition: all .4s;
       transition: all .4s; }
       header .slider-container .slider-box button:hover {
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         cursor: pointer; }
       header .slider-container .slider-box button a {
@@ -200,6 +284,7 @@ header .slider-container {
         color: #000; }
   header .slider-container .first {
     background: linear-gradient(135deg, #fefcea 0%, #f1da36 61%);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     border: 5px solid #F1DA36;
     z-index: 3; }
@@ -207,6 +292,7 @@ header .slider-container {
     border: 2px solid #F1DA36; }
   header .slider-container .second {
     background: linear-gradient(135deg, #ffde4d 29%, #e55f00 100%);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     border: 5px solid #EC8014;
     z-index: 3; }
@@ -215,10 +301,12 @@ header .slider-container {
     background-color: green; }
   header .slider-container .third {
     background: linear-gradient(135deg, #fefcea 0%, #3ab72a 61%);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     border: 5px solid #3AB72A; }
   header .slider-container .forth {
     background: linear-gradient(135deg, #7eb8e8 0%, #2a87d8 50%, #1e569a 100%);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     border: 5px solid #1F5CA2; }
 
@@ -247,8 +335,14 @@ header .slider-container {
 .slider-button-prev:before,
 .slider-button-next:before {
   content: '<i class="fas fa-angle-left"></i>';
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   left: 0;
@@ -263,17 +357,28 @@ header .slider-container {
   content: '>'; }
 
 #below-header .below-header-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
   font-family: Montserrat, sans-serif;
   padding: 35px 0; }
+  #below-header .below-header-up img {
+    width: 100%; }
   #below-header .below-header-up .right-side {
     padding-left: 43px;
     /* padding-top: 50px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     #below-header .below-header-up .right-side h2 {
       width: 81%;
@@ -293,11 +398,14 @@ header .slider-container {
       font-size: 15px;
       letter-spacing: 1px;
       font-family: Montserrat, sans-serif;
+      -webkit-transition: all 0.4s;
       transition: all 0.4s;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
       margin-bottom: 100px;
       width: 200px; }
       #below-header .below-header-up .right-side button:hover {
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         cursor: pointer; }
 
@@ -305,18 +413,32 @@ header .slider-container {
   height: 322px;
   position: relative;
   background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
   .below-header-down .container-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .below-header-down .container-box .boxes {
       width: 350px;
       height: 150px;
       margin: 0px 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       z-index: 1; }
       .below-header-down .container-box .boxes img {
@@ -336,11 +458,16 @@ header .slider-container {
     right: 0; }
 
 footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#36b918), color-stop(#2ea711), color-stop(#25950b), color-stop(#1d8404), to(#157300));
   background-image: linear-gradient(to right, #36b918, #2ea711, #25950b, #1d8404, #157300);
   color: #fff;
   font-size: 14px; }
   footer .footer-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     width: 75%;
     margin-left: auto;
@@ -382,7 +509,11 @@ footer {
         font-size: 30px;
         margin: 0 5px; }
   footer .footer-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-top: 1px solid;
     width: 54%;
@@ -401,11 +532,19 @@ body {
 nav {
   background-color: rgba(255, 255, 255, 0.8); }
 
-header img {
-  width: 100%; }
+header .background-photo-about {
+  background-image: url(../img/bona-med_sub1_onas_slajder-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
 
 section .bookmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
   section .bookmark a {
     line-height: 65px;
@@ -425,6 +564,8 @@ section .bookmark {
         color: #FFC89B; }
 
 section .about-firm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 66%;
   margin-left: auto;
@@ -437,8 +578,15 @@ section .about-firm {
     height: 302px; }
   section .about-firm .right-side {
     padding-left: 73px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     section .about-firm .right-side h2 {
       font-weight: 500;
@@ -458,7 +606,11 @@ section .about-firm {
     padding-bottom: 48px;
     margin: 0; }
   #centers .photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     #centers .photos p {
       font-size: 14px; }
@@ -486,10 +638,13 @@ section .about-firm {
     font-size: 15px;
     letter-spacing: 1px;
     font-family: Montserrat, sans-serif;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
     margin-bottom: 100px; }
     #centers button:hover {
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
       cursor: pointer; }
 
@@ -533,7 +688,11 @@ section .about-firm {
   #opinion .clear {
     clear: both; }
   #opinion .slider-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
     justify-content: left;
     list-style: none;
     position: absolute;
@@ -553,19 +712,29 @@ section .about-firm {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: transparent;
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
+    -webkit-transition: 0.5s all;
     transition: 0.5s all;
     background-color: #E1DCD9;
     outline: none; }
   #opinion .slider-dots-element-active .slider-dots-button:before {
     background: #36B918;
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
     transform: translate(-50%, -50%) scale(1.2); }
   #opinion .slider-dots-button:focus {
     outline: none; }
+
+header .background-photo-offer {
+  background-image: url(../img/bona-med_sub2_oferta_slajder.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
 
 #akt h2 {
   text-align: center;
@@ -574,7 +743,11 @@ section .about-firm {
   font-weight: 400; }
 
 #akt .akt-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 57%;
   margin-right: auto;
@@ -600,7 +773,11 @@ section .about-firm {
   padding-top: 65px;
   padding-bottom: 40px; }
   .admission-rules .admission-rules-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 57%;
     margin-right: auto;
@@ -675,7 +852,11 @@ section .about-firm {
       font-weight: 500;
       font-size: 17px; }
     #provide .provide-up .provide-side-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start;
       margin-top: 35px; }
       #provide .provide-up .provide-side-container p {
@@ -705,12 +886,16 @@ section .about-firm {
     padding-bottom: 25px;
     padding-left: 4px; }
   .comercial .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .comercial .options .left-side,
     .comercial .options .right-side {
       width: 50%; }
       .comercial .options .left-side div,
       .comercial .options .right-side div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
         .comercial .options .left-side div img,
         .comercial .options .right-side div img {
@@ -746,11 +931,20 @@ section .about-firm {
     font-weight: 400;
     padding-bottom: 40px; }
   #questions form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     #questions form .left-side,
     #questions form .right-side {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; }
       #questions form .left-side input,
       #questions form .left-side textarea,
@@ -780,11 +974,14 @@ section .about-firm {
       font-size: 15px;
       letter-spacing: 1px;
       font-family: Montserrat, sans-serif;
+      -webkit-transition: all 0.4s;
       transition: all 0.4s;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
       position: absolute;
       margin-left: 430px; }
       #questions form button:hover {
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         cursor: pointer; }
   #questions .telefon-header {
@@ -798,12 +995,23 @@ section .about-firm {
     #questions .form-down .button-down {
       margin-top: 50px; }
 
+header .background-photo-work {
+  background-image: url(../img/bona-med_praca.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+
 #work {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 59%;
   margin: auto;
   padding-top: 100px; }
   #work .work-left {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
     flex: 2;
     padding-right: 50px; }
     #work .work-left .job-offer {
@@ -848,6 +1056,8 @@ section .about-firm {
         font-size: 14px;
         line-height: 25px; }
   #work .job-place {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1; }
     #work .job-place .short-offer,
     #work .job-place .places {
@@ -886,7 +1096,16 @@ section .about-firm {
         #work .job-place .places .one-place a i {
           color: #B6BCCF; }
 
+header .background-photo-gallery {
+  background-image: url(../img/bona-med_sub4_galeria_slajder.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+
 #gallery .gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
   width: 60%;
@@ -902,10 +1121,15 @@ section .about-firm {
       font-size: 14px; }
 
 #gallery .photos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
   flex-flow: wrap;
   width: 57%;
   margin: auto;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin-bottom: 30px; }
   #gallery .photos-container .photos {
@@ -914,8 +1138,10 @@ section .about-firm {
     background-position: center;
     margin-bottom: 10px;
     background-size: cover;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s; }
     #gallery .photos-container .photos:hover {
+      -webkit-transform: scale(1.1);
       transform: scale(1.1);
       cursor: pointer; }
   #gallery .photos-container .photo1 {
@@ -1013,6 +1239,13 @@ section .about-firm {
   margin: auto;
   height: 90vh; }
 
+header .background-photo-download {
+  background-image: url(../img/bona-med_dopobrania.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+
 #download .documents h2 {
   text-align: center;
   margin-top: 90px;
@@ -1020,7 +1253,11 @@ section .about-firm {
   font-weight: 400; }
 
 #download .documents .documents-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 57%;
   margin-right: auto;
@@ -1029,6 +1266,8 @@ section .about-firm {
   #download .documents .documents-container .right-document {
     text-align: left;
     font-size: 14px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1; }
     #download .documents .documents-container .left-document h3,
     #download .documents .documents-container .right-document h3 {
@@ -1065,11 +1304,17 @@ section .about-firm {
     font-weight: 400;
     font-size: 25px; }
   #download .download-files .download-files-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 55%;
     margin: auto;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
     #download .download-files .download-files-container .files {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
       flex: 1;
       font-weight: 500; }
       #download .download-files .download-files-container .files p {
@@ -1086,14 +1331,26 @@ section .about-firm {
         font-weight: 700;
         text-transform: uppercase;
         font-size: 14px;
+        -webkit-transition: all .4s;
         transition: all .4s;
         position: static; }
         #download .download-files .download-files-container .files button:hover {
+          -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
           cursor: pointer; }
 
+header .background-photo-contact {
+  background-image: url(../img/bona-med_kontak.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+
 #contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 85px;
   width: 56%;
@@ -1114,7 +1371,12 @@ section .about-firm {
   #contact .contact-container .right-contact {
     margin-left: 70px; }
     #contact .contact-container .right-contact form {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; }
       #contact .contact-container .right-contact form input,
       #contact .contact-container .right-contact form textarea {
@@ -1142,7 +1404,9 @@ section .about-firm {
       font-size: 15px;
       letter-spacing: 1px;
       font-family: Montserrat, sans-serif;
+      -webkit-transition: all 0.4s;
       transition: all 0.4s;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.8);
       margin-bottom: 100px;
       width: 105px;
@@ -1150,12 +1414,16 @@ section .about-firm {
       margin-bottom: 30px;
       margin-left: 250px; }
       #contact .contact-container .right-contact button:hover {
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
         cursor: pointer; }
 
 #contact .map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 62%;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: auto;
   padding-bottom: 70px; }

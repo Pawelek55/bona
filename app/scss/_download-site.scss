@@ -1,3 +1,13 @@
+header{
+    .background-photo-download{
+        background-image: url(../img/bona-med_dopobrania.jpg);
+                background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+}
+
 #download {
     .documents {
         h2 {
@@ -8,7 +18,11 @@
         }
 
         .documents-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             width: 57%;
             margin-right: auto;
@@ -17,6 +31,8 @@
             .right-document {
                 text-align: left;
                 font-size: 14px;
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
                 flex: 1;
                 h3 {
                     margin-top: 0;
@@ -62,11 +78,17 @@
             font-size: 25px;
         }
         .download-files-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             width: 55%;
             margin: auto;
+            -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
             .files {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
                 flex: 1;
                 font-weight: 500;
                 p {

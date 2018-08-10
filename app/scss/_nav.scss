@@ -4,13 +4,19 @@ nav {
     background-color: rgba(185, 191, 201, 0.3);
     margin-left: auto;
     margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 5;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 
     .logo {
@@ -23,9 +29,67 @@ nav {
         }
     }
 
+    .toggle {
+        display: none;
+        width: 100%; 
+        .hamburger {
+            width: 20px;
+            height: 15px;
+            border: 0;
+            border-top: 2px solid #169629;
+            background: transparent;
+            position: absolute;
+            -webkit-transition: 0.3s -webkit-transform linear;
+            transition: 0.3s -webkit-transform linear;
+            transition: 0.3s transform linear;
+            transition: 0.3s transform linear, 0.3s -webkit-transform linear;
+            margin-left: auto;
+            margin-right: auto;
+            top: 15px;
+            right: 30px;
+        }
+        
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 2px solid #169629;
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+        }
+        
+        .hamburger::after {
+            -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+            -webkit-transition: 0.3s -webkit-transform linear;
+            transition: 0.3s -webkit-transform linear;
+            transition: 0.3s transform linear;
+            transition: 0.3s transform linear, 0.3s -webkit-transform linear;
+        }
+        
+        .hamburger:hover{
+            cursor: pointer;
+        }
+/*        
+        .hamburger:focus {
+            transform: rotate(45deg) translateY(5px);
+            border: none;
+        }
+        
+        .hamburger:focus::after {
+            transform: rotate(-90deg) translateX(-4px);
+        }*/
+    }
     ul {
         text-transform: uppercase;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
         margin: 10px 0 0 0;
         line-height: 70px;
@@ -54,6 +118,11 @@ nav {
             .active-a {
                 color: #5FB06A;
             }
+
+        }
+
+        .lenguage-below {
+            display: none;
         }
 
         .active {
@@ -93,5 +162,6 @@ nav {
 
 .nav-change {
     background-color: #fff;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 9px 10px rgba(0, 0, 0, 0.3);
 }

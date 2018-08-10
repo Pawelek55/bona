@@ -1,6 +1,19 @@
+header{
+    .background-photo-contact{
+        background-image: url(../img/bona-med_kontak.jpg);
+                background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+}
+
 #contact {
     .contact-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         padding-top: 85px;
         width: 56%;
@@ -22,7 +35,12 @@
         .right-contact {
             margin-left: 70px;
             form {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
                 input,
                 textarea {
@@ -53,8 +71,11 @@
         }
     }
     .map-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 62%;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         margin: auto;
         padding-bottom: 70px;

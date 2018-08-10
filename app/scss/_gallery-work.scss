@@ -1,5 +1,17 @@
+header{
+    .background-photo-gallery{
+        background-image: url(../img/bona-med_sub4_galeria_slajder.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+}
+
 #gallery {
     .gallery-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: auto;
         width: 60%;
@@ -19,10 +31,15 @@
         }
     }
     .photos-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-flow: wrap;
         flex-flow: wrap;
         width: 57%;
         margin: auto;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         margin-bottom: 30px;
 
@@ -32,9 +49,11 @@
             background-position: center;
             margin-bottom: 10px;
             background-size: cover;
+            -webkit-transition: all 0.4s;
             transition: all 0.4s;
 
             &:hover {
+                -webkit-transform: scale(1.1);
                 transform: scale(1.1);
                 cursor: pointer;
             }

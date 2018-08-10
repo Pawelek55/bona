@@ -3,15 +3,23 @@ nav {
 }
 
 header {
-    img {
-        width: 100%;
+    .background-photo-about {
+        background-image: url(../img/bona-med_sub1_onas_slajder-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
     }
 
 }
 
 section {
     .bookmark {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
 
         a {
@@ -40,6 +48,8 @@ section {
     }
 
     .about-firm {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 66%;
         margin-left: auto;
@@ -47,16 +57,23 @@ section {
         font-family: Montserrat, sans-serif;
         padding-left: 60px;
         padding-top: 70px;
-        
-        img{
+
+        img {
             width: 311px;
             height: 302px
         }
 
         .right-side {
             padding-left: 73px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
 
             h2 {
@@ -83,7 +100,11 @@ section {
         margin: 0;
     }
     .photos {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         p {
             font-size: 14px;
@@ -122,8 +143,8 @@ section {
     }
     .opinion-container {
         float: left;
-        .photo-of-book{
-            img{
+        .photo-of-book {
+            img {
                 width: 480px;
             }
         }
@@ -166,7 +187,11 @@ section {
 
     /* slider dots */
     .slider-dots {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
         justify-content: left;
         list-style: none;
         position: absolute;
@@ -192,18 +217,20 @@ section {
         position: absolute;
         left: 50%;
         top: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         background: transparent;
         width: 0.9rem;
         height: 0.9rem;
         border-radius: 50%;
-        transition: 0.5s all;
-        //        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all; //        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
         background-color: #E1DCD9;
         outline: none;
     }
     .slider-dots-element-active .slider-dots-button:before {
         background: #36B918;
+        -webkit-transform: translate(-50%, -50%) scale(1.2);
         transform: translate(-50%, -50%) scale(1.2);
     }
     .slider-dots-button:focus {

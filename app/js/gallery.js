@@ -8,6 +8,8 @@ const photos = document.querySelectorAll('.photos');
 let windowHeight = window.outerHeight + 'px';
 let windowWidth = window.outerWidth + 'px';
 
+    console.log(window);
+    
 let boxBigPhoto = document.createElement('div');
 gallery.appendChild(boxBigPhoto);
 

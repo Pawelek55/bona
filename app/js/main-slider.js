@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.currentSlide = 0;
         }
         this.changeSlide(this.currentSlide);
-        console.log(this);
+//        console.log(this);
     }
 
     Slider.prototype.changeSlide = function (index) {
@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function () {
         this.slides[index].classList.add('slider-slide-active');
         this.slides[index].setAttribute('aria-hidden', false);
 
-        console.log(this.currentSlide);
+//        console.log(this.currentSlide);
 
         let sliderBox = document.querySelectorAll('.slider-box');
 
-        console.log(sliderBox[0]);
+//        console.log(sliderBox[0]);
 
         if (this.currentSlide == 0) {
             sliderBox[3].classList.remove('forth')

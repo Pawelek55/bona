@@ -1,17 +1,30 @@
 #below-header {
     .below-header-up {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 1100px;
         margin-left: auto;
         margin-right: auto;
         font-family: Montserrat, sans-serif;
         padding: 35px 0;
+        
+        img{
+            width: 100%;
+        }
 
         .right-side {
             padding-left: 43px;
             /* padding-top: 50px; */
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
 
             h2 {
@@ -35,19 +48,33 @@
     height: 322px;
     position: relative;
     background-color: #F5F5F5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     .container-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         .boxes {
             width: 350px;
             height: 150px;
             margin: 0px 15px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             z-index: 1;
 
