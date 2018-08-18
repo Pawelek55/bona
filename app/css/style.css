@@ -1435,7 +1435,7 @@ header .background-photo-contact {
     text-align: center;
     font-size: 14px; }
   #contact .map-container #siem div {
-    background-image: url(../img/siem.png);
+    background-image: url(../img/siem.PNG);
     width: 560px;
     height: 415px; }
   #contact .map-container #siem p {
