@@ -729,7 +729,6 @@
             .right-contact {
                 margin-left: 0;
                 width: 90%;
-
                 text-align: center;
 
                 form {
@@ -741,6 +740,9 @@
                     textarea {
                         width: 100%;
                     }
+                }
+                button {
+                    margin-left: 150px;
                 }
             }
         }
@@ -857,24 +859,12 @@
                 }
             }
         }
-    }
-
-    //    Offer
+    } //    Offer
     #questions {
         img {
             width: 90%;
         }
     }
-    
-//    Contact
-    #contact{
-        .contact-container{
-            .right-contact{
-                    button{
-                        margin-left: 180px;
-                }
-            }
-        }
-    }
 
+    //    Contact
 }

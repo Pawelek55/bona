@@ -436,6 +436,8 @@
         #contact .contact-container .right-contact form input,
         #contact .contact-container .right-contact form textarea {
           width: 100%; }
+      #contact .contact-container .right-contact button {
+        margin-left: 150px; }
   #contact .map-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -502,6 +504,4 @@
   #opinion .opinion-container .photo-of-book img {
     width: 340px; }
   #questions img {
-    width: 90%; }
-  #contact .contact-container .right-contact button {
-    margin-left: 180px; } }
+    width: 90%; } }
