@@ -53,6 +53,8 @@
   #questions .telefon-header {
     padding-top: 60px;
     padding-bottom: 20px; }
+  #questions img {
+    width: 80%; }
   #work {
     width: 80%; }
   #gallery .gallery-container {
@@ -498,4 +500,6 @@
     #centers .photos .right {
       padding-left: 15px; }
   #opinion .opinion-container .photo-of-book img {
-    width: 340px; } }
+    width: 340px; }
+  #questions img {
+    width: 90%; } }
