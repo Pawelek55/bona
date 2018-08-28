@@ -1,6 +1,5 @@
 //Slider of opinion
 
-
 let opinionSlider = document.querySelector('.opinion-slider');
 let opinionSlideCount = opinionSlider.childElementCount;
 let opinionSlideWidth = 100 / opinionSlideCount;
@@ -33,12 +32,7 @@ function slide(e) {
     if (opinionSlideIndex > 5) {
         opinionSlideIndex = 0;
     }
-
-    //    if (e.target == dotsContainer) return;
-
-    //    let marginLeft = opinionSlideIndex * opinionSlideWidth + '%';
     marginLeft = opinionSlideIndex * -50 + '%';
-    //    console.log(marginLeft)
 
     opinionSlideIndex = opinionSlideIndex + 1;
     opinionNewSlideIndex = opinionSlideIndex + 1;
@@ -48,8 +42,6 @@ function slide(e) {
     }, 800, function () {
         opinionSlideIndex = opinionNewSlideIndex;
     })
-
-    //    console.log(opinionSlideIndex)
     let dotsArr = Array.from(dots)
 
 }
@@ -89,6 +81,13 @@ if (window.innerWidth < 768) {
 
 } else{
         opinionSlider.style.width = opinionSlideCount * 50 + '%';
+        opinionSlideIndex = 0;
+    
+        for (let i = 0; i < opinionSlideCount; i++) {
+            opinionArr[i].style.width = opinionSlideWidth + '%';
+            opinionArr[i].style.marginLeft = opinionSlideIndex * opinionSlideWidth + '%';
+            opinionSlideIndex = opinionSlideIndex + 1;
+        }
     }
 }
 

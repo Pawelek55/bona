@@ -537,7 +537,7 @@ header .background-photo-about {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 40vh; }
 
 section .bookmark {
   display: -webkit-box;
@@ -595,7 +595,7 @@ section .about-firm {
       margin-top: 0;
       font-size: 15px;
       line-height: 25px;
-      width: 83%;
+      width: 110%;
       padding-bottom: 20px; }
 
 #centers {
@@ -734,7 +734,7 @@ header .background-photo-offer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 40vh; }
 
 #akt h2 {
   text-align: center;
@@ -765,8 +765,20 @@ header .background-photo-offer {
     #akt .akt-container .right-side p {
       margin-top: 0;
       margin-bottom: 65px; }
+  #akt .akt-container .left-side {
+    flex: 1; }
   #akt .akt-container .right-side {
-    padding-left: 30px; }
+    padding-left: 30px;
+    flex: 1; }
+    #akt .akt-container .right-side .right-photo {
+      background-image: url(../img/dzialamybonamed-539x283.png);
+      height: 50%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    #akt .akt-container .right-side img {
+      width: 450px; }
 
 .admission-rules {
   background-color: #F5F5F5;
@@ -917,7 +929,7 @@ header .background-photo-offer {
     margin-bottom: 70px;
     font-weight: 400; }
   #help p {
-    width: 39%;
+    width: 55%;
     margin: auto; }
 
 #questions {
@@ -1000,7 +1012,7 @@ header .background-photo-work {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 40vh; }
 
 #work {
   display: -webkit-box;
@@ -1101,7 +1113,7 @@ header .background-photo-gallery {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 40vh; }
 
 #gallery .gallery-container {
   display: -webkit-box;
@@ -1244,7 +1256,7 @@ header .background-photo-download {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 40vh; }
 
 #download .documents h2 {
   text-align: center;
@@ -1344,7 +1356,7 @@ header .background-photo-contact {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 40vh; }
 
 #contact .contact-container {
   display: -webkit-box;
@@ -1422,9 +1434,9 @@ header .background-photo-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 62%;
+  width: 95%;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: auto;
   padding-bottom: 70px; }
   #contact .map-container #doz div {
@@ -1435,7 +1447,7 @@ header .background-photo-contact {
     text-align: center;
     font-size: 14px; }
   #contact .map-container #siem div {
-    background-image: url(../img/siem.PNG);
+    background-image: url(../img/siem1.PNG);
     width: 560px;
     height: 415px; }
   #contact .map-container #siem p {

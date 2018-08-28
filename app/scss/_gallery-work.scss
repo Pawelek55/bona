@@ -1,10 +1,7 @@
 header{
     .background-photo-gallery{
         background-image: url(../img/bona-med_sub4_galeria_slajder.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
+        @include mainPhoto;
     }
 }
 

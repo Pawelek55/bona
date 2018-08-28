@@ -1,10 +1,7 @@
-header{
-    .background-photo-contact{
+header {
+    .background-photo-contact {
         background-image: url(../img/bona-med_kontak.jpg);
-                background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
+        @include mainPhoto;
     }
 }
 
@@ -74,9 +71,9 @@ header{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 62%;
+        width: 95%;
         -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: auto;
         padding-bottom: 70px;
         #doz {
@@ -94,7 +91,7 @@ header{
         #siem {
 
             div {
-                background-image: url(../img/siem.PNG);
+                background-image: url(../img/siem1.PNG);
                 width: 560px;
                 height: 415px;
             }

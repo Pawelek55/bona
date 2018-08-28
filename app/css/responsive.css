@@ -38,8 +38,16 @@
     margin-top: 50px; }
   section #akt .akt-container {
     width: 84%; }
+    section #akt .akt-container .left-side {
+      width: 390px; }
     section #akt .akt-container img {
       width: 480px; }
+    section #akt .akt-container .right-side img {
+      width: 380px; }
+    section #akt .akt-container .right-side h3 {
+      width: 90%; }
+    section #akt .akt-container .right-side p {
+      width: 90%; }
   section .admission-rules .admission-rules-container {
     width: 76%; }
   section .admission-rules .decision {
@@ -50,11 +58,13 @@
     width: 80%; }
   #help p {
     width: 80%; }
+  #questions form button {
+    margin-left: 320px; }
   #questions .telefon-header {
     padding-top: 60px;
     padding-bottom: 20px; }
   #questions img {
-    width: 80%; }
+    width: 50%; }
   #work {
     width: 80%; }
   #gallery .gallery-container {
@@ -80,7 +90,7 @@
     width: 80%; }
     #contact .map-container #doz div,
     #contact .map-container #siem div {
-      width: 450px;
+      width: 390px;
       height: 350px; }
   footer .footer-down {
     width: 100%; } }
@@ -332,10 +342,14 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    #offer #akt .akt-container .left-side {
+      width: 100%; }
     #offer #akt .akt-container .right-side {
       padding: 0; }
       #offer #akt .akt-container .right-side img {
         width: 90%; }
+      #offer #akt .akt-container .right-side .right-photo {
+        height: 285px; }
   #offer .admission-rules .admission-rules-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

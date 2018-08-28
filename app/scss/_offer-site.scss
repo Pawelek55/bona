@@ -1,10 +1,7 @@
     header {
         .background-photo-offer {
             background-image: url(../img/bona-med_sub2_oferta_slajder.jpg);
-                    background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
+            @include mainPhoto;
         }
     }
 
@@ -40,8 +37,24 @@
                     margin-bottom: 65px;
                 }
             }
+            .left-side {
+                //                min-width: 480px;
+                flex: 1;
+            }
             .right-side {
                 padding-left: 30px;
+                flex: 1;
+                .right-photo {
+                    background-image: url(../img/dzialamybonamed-539x283.png);
+                    height: 50%;
+                    width: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                img {
+                    width: 450px;
+                }
             }
         }
     }
@@ -226,7 +239,7 @@
             font-weight: 400;
         }
         p {
-            width: 39%;
+            width: 55%;
             margin: auto;
         }
     }
